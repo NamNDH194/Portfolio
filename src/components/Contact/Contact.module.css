@@ -1,0 +1,100 @@
+@import "../../vars.css";
+
+.container {
+  color: #fff;
+  margin-top: 120px;
+  background-color: var(--color-secondary);
+  display: flex;
+  justify-content: space-evenly;
+  width: 100vw;
+  padding: 58px 10%;
+  gap: 10px;
+}
+
+.text h2 {
+  font-size: 55px;
+  font-weight: 700;
+  letter-spacing: 4px;
+}
+
+.text p {
+  font-size: 40px;
+  font-weight: 400;
+  letter-spacing: 2px;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  list-style: none;
+  gap: 26px;
+}
+
+.link {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.link img {
+  width: 38px;
+  z-index: 1;
+}
+
+.backgoundImage {
+  background-color: #fff;
+  margin-top: 1.9px;
+  z-index: 0;
+  display: inline-block;
+  position: absolute;
+  width: 36.5px;
+  height: 36.5px;
+  border-radius: 50%;
+}
+
+.link a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 30px;
+  font-weight: 400;
+  letter-spacing: 1.5px;
+}
+
+.link p {
+  color: #fff;
+  text-decoration: none;
+  font-size: 30px;
+  font-weight: 400;
+  letter-spacing: 1.5px;
+}
+
+@media screen and (max-width: 875px) {
+  .container {
+    flex-direction: column;
+    gap: 23px;
+  }
+
+  .text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .links {
+    align-items: flex-start;
+  }
+
+  .link {
+    /* flex-direction: column; */
+    align-items: flex-start;
+  }
+
+  .link a {
+    font-size: 21px;
+  }
+
+  .link p {
+    font-size: 21px;
+  }
+}

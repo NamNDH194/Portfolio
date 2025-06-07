@@ -1,0 +1,148 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 129px;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.title {
+  font-size: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.content {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.introduce {
+  font-size: 25px;
+  font-weight: 400;
+}
+
+.interestList {
+  background: #475899;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.interestItem {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  margin-top: 20px;
+  margin-left: 40px;
+  width: 85%;
+}
+
+.interestItem p {
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.interestItem img {
+  width: 90px;
+}
+
+/* #interestItemSport {
+  display: grid;
+  grid-template-columns: 100px auto;
+  grid-template-rows: auto auto;
+  margin-left: 40px;
+  width: 85%;
+}
+
+#interestItemSport p {
+  margin-left: 10px;
+  font-size: 20px;
+  font-weight: 300;
+}
+
+#interestItemSport img {
+  width: 90px;
+}
+
+#interestContainerImg {
+  grid-column: 2 / 3;
+  display: flex;
+  gap: 10px;
+  margin: 10px;
+}
+
+#interestContainerImg img {
+  width: 200px;
+} */
+
+#interestItemSport {
+  list-style: none;
+}
+
+.interestItemSportMainContent {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  align-items: center;
+  margin-top: 20px;
+  margin-left: 40px;
+  width: 85%;
+}
+
+.interestItemSportMainContent img {
+  width: 90px;
+}
+
+.interestItemSportMainContent p {
+  font-size: 20px;
+  font-weight: 300;
+}
+
+#interestContainerImg {
+  display: flex;
+  margin-left: 150px;
+  gap: 20px;
+}
+
+#interestContainerImg img {
+  width: 170px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 830px) {
+  #interestContainerImg {
+    flex-direction: column;
+  }
+  #interestContainerImg img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 340px) {
+  .interestItem {
+    margin-left: 5px;
+  }
+  .interestItem img:first-child {
+    display: none;
+  }
+  .interestItemSportMainContent {
+    margin-left: 5px;
+  }
+  .interestItemSportMainContent img {
+    display: none;
+  }
+  #interestContainerImg {
+    flex-direction: column;
+    margin-left: 5px;
+  }
+  #interestContainerImg img {
+    max-width: 100%;
+    height: auto;
+  }
+}
